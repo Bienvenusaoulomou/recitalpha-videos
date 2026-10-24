@@ -14,7 +14,12 @@ Goal: reach Creator Rewards (10k followers, 100k views/30 days). Every video mus
 - Gang/mafia stories: tell the money angle (heists, rackets, tax cases, laundering). No glorifying, no gore.
 - Keep a sources list per episode in `engine/stories_log.md`.
 
+## Story choice (first)
+- Prefer LITTLE-KNOWN true stories (see "Story choice rule" in stories_log.md). Famous stories are retold by hundreds of accounts.
+
 ## Hook rules (first 3 seconds decide everything)
+- Never open with "In 19XX, ..." or a name. Open with the absurd fact or a question, e.g. "This woman got banks to lend her millions... with one fake signature."
+- Frame 1 must already show the hook text big on screen (no fade-in from black).
 - Sentence 1 = the most shocking TRUE fact or twist, with a number. e.g. "In 1931, the most feared gangster in America went to prison… for not paying taxes."
 - On-screen giant number/text from frame 1. No intros, no "hey guys".
 - End every video with a cliffhanger teaser of the NEXT episode + "Follow".
