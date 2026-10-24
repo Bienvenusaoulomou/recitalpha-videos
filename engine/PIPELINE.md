@@ -29,16 +29,19 @@ Work dir layout (paths are hard-coded, keep them):
   plus img/ for archive photos.
 1. Setup: `pip install --break-system-packages skia-python kokoro-onnx soundfile numpy pillow`. Download fonts + models.
    Copy project docs into each episode dir: `engine/engine.py` -> engine.py, `engine/gen_audio.py`, `engine/mix_ep.py`.
-   Use `engine/render_ep02_eiffel.py` + `engine/script_ep02_eiffel.py` as THE reference for a new episode (photo cards,
+   Copy `engine/props.py` too (shared photo cards, tags, bills, safes, calendars, pop text, follow pill). Use `engine/render_ep03_capone.py`, `engine/render_ep04_brinks.py` (and ep02) as THE reference for a new episode (photo cards,
    props, scene timing with wt()). Write script.py and render_epNN.py for the new story in the same pattern
    (os.environ["REC_ROOT"] = the episode dir; set E.DRAW, E.RED_SCENES, IMPACTS, CLINKS).
 2. Research + script (12 scenes, 1–3 sentences each, ~200–240 words). Numbers spelled out in narration, digits in CAPTION_OVERRIDES.
 3. `REC_ROOT=/home/claude/epNN python3 gen_audio.py af_heart 1.05` -> voice.wav + timeline.json (TOTAL must be > 62 s).
-4. Archive photos (if the user's PC is reachable): with Desktop Commander (PowerShell) on the user's PC, query the Wikimedia Commons API
-   (generator=search, namespace 6, prop=imageinfo, extmetadata LicenseShortName) and download ONLY files whose license is
-   "Public domain" or "CC0" into C:\Users\Bienvenu\Videos\Recitalpha\archive\epNN_<slug>\ (send a User-Agent header), then stage them with
-   device_stage_files and copy to /home/claude/epNN/img/. Look at a contact sheet before using them. Credit each photo on screen.
-   Never use news/TV/film footage or copyrighted photos. If the PC is unreachable, skip photos — fully animated is fine.
+4. Archive photos: the cloud workspace cannot reach Wikimedia, so use the PUBLIC-DOMAIN photo stock already in the repo:
+   `archive/stock/<topic>/` (each folder has credits.txt: file | Commons title | license | date | author) and `archive/used/epNN_*/`.
+   Topics in stock: dillinger, bonnie_clyde, luciano, db_cooper, george_parker (Brooklyn Bridge), kreuger, poyais (Gregor MacGregor),
+   lansky, siegel, machine_gun_kelly, dutch_schultz, escobar, lufthansa (JFK airport), prohibition, great_depression, fbi_old.
+   Prefer stories that have stock photos. Look at a contact sheet first (some files may be off-topic: skip them), and put the credit
+   line on screen (author/source from credits.txt, e.g. "PHOTO: FBI · PUBLIC DOMAIN"). If no photo fits, make the scene fully animated.
+   Never use news/TV/film footage or copyrighted images. If Mike's PC happens to be reachable (Desktop Commander tools present),
+   you MAY download extra Public-domain/CC0 Commons files there, but never depend on it.
 5. Preview with `python3 render_epNN.py --frames=a,b,c` (2 frames per scene in a contact sheet) and fix overlaps or missing glyphs
    (Bebas has no arrows like →). Dry-run every 3rd frame to catch crashes, then full render (~13 min, run in background),
    `python3 mix_ep.py render_epNN`, then mux:
