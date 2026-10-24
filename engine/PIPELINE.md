@@ -48,16 +48,21 @@ Work dir layout (paths are hard-coded, keep them):
    `ffmpeg -i video_only.mp4 -i mix.wav -c:v copy -c:a aac -b:a 192k -ar 48000 -shortest -movflags +faststart <name>.mp4`.
    Keep under 95 MB.
 
-## Publishing
+## Publishing (TikTok + YouTube Shorts, same video, 2 separate Metricool posts)
 - Push the MP4 to GitHub repo Bienvenusaoulomou/recitalpha-videos (attach with add_repo, access "push"; clone --depth 1; fetch before push), folder `videos/`.
   Public URL: https://raw.githubusercontent.com/Bienvenusaoulomou/recitalpha-videos/main/videos/<name>.mp4 (check it returns 200).
-- Metricool: brand blogId 7611997, timezone Africa/Tunis, network tiktok.
-  createScheduledPost with autoPublish true, media [public URL], videoCoverMilliseconds at the big hook frame (~3000),
-  tiktokData {privacyOption PUBLIC_TO_EVERYONE, isAigc true, title: short hook}, firstCommentText: next-episode teaser + "Follow".
+- Metricool brand blogId 7611997, timezone Africa/Tunis. Make TWO createScheduledPost calls per episode at the same time
+  (separate posts, so a failure on one network never blocks the other):
+  1. TikTok: providers [tiktok], autoPublish true, media [URL], videoCoverMilliseconds at the hook frame (~3000–7000),
+     tiktokData {privacyOption PUBLIC_TO_EVERYONE, isAigc true, title: short hook}, firstCommentText: next-episode teaser + "Follow so you don't miss it".
+  2. YouTube Short: providers [youtube], autoPublish true, media [URL], no cover fields, firstCommentText "",
+     youtubeData {title: hook in Title Case + 1 emoji + " #shorts" (max ~90 chars), type "short", privacy "public",
+     tags: 5–7 keywords, category "EDUCATION", madeForKids false, isAiGeneratedContent false (stylized animation + real archive photos, nothing realistic-synthetic)}.
+     Text: 2–3 sentence teaser + question + "#shorts" + 3–4 hashtags.
   If auto-publishing fails, create the post with draft true and say so.
-- Description template:
+- TikTok description template:
   Line 1: hook with a number + emoji. Lines 2–3: two-sentence teaser that does NOT give away the ending. Line 4: a question to drive comments.
-  Then 4–5 hashtags (story-specific + #truestory #history #money). No #fyp.
+  Then 4–5 hashtags (story-specific + #truestory #history). No #fyp.
 
 ## Report
-End each run with a short message: the 2 titles, post times, Metricool planner links, and any fact that was softened.
+End each run with a short message: the 2 titles, post times, Metricool planner links (TikTok + YouTube), and any fact that was softened.
