@@ -22,6 +22,10 @@ EP01–EP04 all opened with "In 19XX". From EP05 on: open on the absurd fact + n
 ## Queue (verify every fact before using)
 - NEXT (teased at the end of EP06): Cassie Chadwick, "the woman who convinced bankers she was Andrew Carnegie's secret daughter" (Ohio History Connection; Case Western Encyclopedia of Cleveland History). Money angle.
 - (done: Lufthansa EP05, Poyais EP06)
+- PRIORITY (YouTube Studio "Inspiration" suggestions, 2026-10-25 — do these right after Cassie Chadwick):
+  1. Ferdinand Waldo Demara, "The Great Impostor": faked careers as a surgeon (operated on a Canadian Navy ship), monk, teacher, prison official, psychologist. YouTube idea title: "How One Impostor Faked Five Different High-Profile Careers". Verify each career with 2 sources.
+  2. The Antwerp Diamond Heist (2003): vault with 10 layers of security, loot reportedly $100M+, most never recovered; caught because of a half-eaten sandwich and trash in the woods. Check the "no broken alarms" claim carefully (alarms were bypassed/disabled) and soften figures.
+  3. Pablo Escobar's downfall by RADIO (1993): lesser-known angle allowed — the phone/radio triangulation that found him. Tell the tech/money angle; no gore, don't describe the shooting.
 - Cassie Chadwick, the woman who convinced banks she was Andrew Carnegie's secret daughter (1890s–1904)
 - Alves dos Reis, the man who printed real Portuguese banknotes with forged contracts (1925)
 - Tino De Angelis and the Great Salad Oil Swindle: tanks of water with oil floating on top (1963)
