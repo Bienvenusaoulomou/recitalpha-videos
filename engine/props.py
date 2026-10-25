@@ -158,5 +158,7 @@ def make_rehook(scene_id, line1, line2, line3, danger=False):
         pop_text(c, line2, CX, 800, ANTON, 150, GOLD2, prog(t, 0.25, 0.25), glow=26, glow_rgb=GOLD)
         pb = prog(t, b1 - 0.1, 0.25)
         if pb > 0:
-            pop_text(c, line3, CX, 1000, ANTON, 84, RED if danger else CREAM, pb, glow=18, s0=1.5)
+            sz = 84
+            while text_w(line3, F(ANTON, sz)) > 880 and sz > 40: sz -= 2
+            pop_text(c, line3, CX, 1000, ANTON, sz, RED if danger else CREAM, pb, glow=18, s0=1.15)
     return sc
