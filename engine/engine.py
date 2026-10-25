@@ -190,6 +190,75 @@ DUST = [(random.Random(i).uniform(0, W), random.Random(i + 99).uniform(0, H),
          random.Random(i + 7).uniform(1.2, 3.2), random.Random(i + 3).uniform(8, 26),
          random.Random(i + 5).uniform(0.15, 0.45)) for i in range(70)]
 
+
+# ---------- FX v2 (2026-10-25): punch-zoom hits, whip transitions, light leaks, embers, b-roll ----------
+FX = True
+HITS = []      # absolute seconds of impact moments (set with set_hits(IMPACTS))
+BROLL = {}     # scene_id -> dict(frames=[skia.Image], fps=, alpha=, credit=)
+def set_hits(impacts):
+    global HITS
+    out = []
+    for item in impacts:
+        sid, w, off = item[0], item[1], item[2]
+        if sid in SCN:
+            try: out.append(SCN[sid]["start"] + wt(sid, w) + off)
+            except Exception: pass
+    HITS = sorted(out)
+
+def load_broll(path, start=0.0, dur=6.0, fps=15, alpha=0.5, credit=None, w=540, h=960):
+    """Decode a clip with ffmpeg, crop to 9:16, grade to Récitalpha sepia. Returns a dict for BROLL[scene_id]."""
+    cmd = ["ffmpeg", "-loglevel", "error", "-ss", str(start), "-t", str(dur), "-i", path,
+           "-vf", f"fps={fps},scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h}",
+           "-f", "rawvideo", "-pix_fmt", "rgb24", "-"]
+    raw = subprocess.run(cmd, capture_output=True).stdout
+    n = len(raw) // (w * h * 3)
+    frames = []
+    alpha_ch = np.full((h, w, 1), 255, np.uint8)
+    for i in range(n):   # frame by frame to keep memory low
+        f = np.frombuffer(raw, np.uint8, count=w * h * 3, offset=i * w * h * 3).reshape(h, w, 3).astype(np.float32)
+        g = np.clip((f.mean(axis=2, keepdims=True) / 255.0 - 0.08) * 1.15, 0, 1)
+        sep = (np.concatenate([g * 245, g * 205, g * 150], axis=2) * 0.85 + 6).astype(np.uint8)
+        frames.append(mk_img(np.concatenate([sep, alpha_ch], axis=2)))
+    del raw
+    return dict(frames=frames, fps=fps, alpha=alpha, credit=credit)
+
+def hit_k(t):
+    k = 0.0
+    for h in HITS:
+        if 0 <= t - h < 0.6: k = max(k, math.exp(-(t - h) * 7.0))
+    return k
+
+EMBERS = [(random.Random(i * 7).uniform(0, W), random.Random(i * 13).uniform(0, H), random.Random(i * 3).uniform(2.0, 5.5),
+           random.Random(i * 5).uniform(30, 90), random.Random(i * 11).uniform(0, 6.28)) for i in range(46)]
+def fx_background(c, t, sid, lt):
+    b = BROLL.get(sid)
+    if b and b["frames"]:
+        i = min(len(b["frames"]) - 1, int(lt * b["fps"]) % len(b["frames"]))
+        img = b["frames"][i]
+        pa = skia.Paint(); pa.setAlphaf(b["alpha"])
+        zz = 1.0 + 0.06 * (lt / 6.0)
+        c.save(); c.translate(CX, H / 2); c.scale(zz, zz); c.translate(-CX, -H / 2)
+        c.drawImageRect(img, skia.Rect(0, 0, W, H), skia.SamplingOptions(skia.FilterMode.kLinear), pa)
+        c.restore()
+        sh = skia.Paint()
+        sh.setShader(skia.GradientShader.MakeLinear([skia.Point(0, 0), skia.Point(0, H)],
+                     [C(BG, 0.75), C(BG, 0.25), C(BG, 0.35), C(BG, 0.9)], [0.0, 0.3, 0.6, 1.0]))
+        c.drawRect(skia.Rect(0, 0, W, H), sh)
+        if b.get("credit"):
+            text(c, b["credit"], W - 60, 1262, BEBAS, 26, MUTED, 0.8, align="r", spacing=2)
+    # moving light leak
+    lx = CX + 520 * math.sin(t * 0.23); ly = 520 + 380 * math.sin(t * 0.17 + 1.3)
+    lp = skia.Paint(); lp.setBlendMode(skia.BlendMode.kScreen)
+    lp.setShader(skia.GradientShader.MakeRadial(skia.Point(lx, ly), 620, [C((255, 190, 90), 0.16), C((255, 190, 90), 0.0)], [0.0, 1.0]))
+    c.drawRect(skia.Rect(0, 0, W, H), lp)
+    # rising embers
+    for (x, y, r, sp, ph) in EMBERS:
+        yy = (y - t * sp) % H; xx = x + 18 * math.sin(t * 0.8 + ph)
+        a = 0.25 + 0.25 * math.sin(t * 2.0 + ph)
+        gp = P(C(GOLD2, a * 0.6)); gp.setMaskFilter(skia.MaskFilter.MakeBlur(skia.kNormal_BlurStyle, r * 1.6))
+        c.drawCircle(xx, yy, r * 1.4, gp)
+        c.drawCircle(xx, yy, r * 0.5, P(C((255, 236, 190), a)))
+
 RED_SCENES = {"collapse", "damage"}
 def background(c, t, sid):
     c.clear(C(BG))
@@ -725,14 +794,41 @@ def frame(c, fi):
     if sc is SCENES[0]: lt = t - 0.0; D = sc["end"]
     if sc is not SCENES[0]: lt = t - sc["start"]
     background(c, t, sc["id"])
-    # scene layer with slow push-in and fade out at the cut
-    fade_out = 1 - prog(lt, D - 0.16, 0.16) if sc is not SCENES[-1] else 1.0
-    fade_in = prog(lt, 0, 0.12)
-    layer_alpha(c, min(fade_in, fade_out) if sc is not SCENES[0] else fade_out)
-    z = 1.0 + 0.035 * eio(prog(lt, 0, D))
-    c.save(); c.translate(CX, 780); c.scale(z, z); c.translate(-CX, -780)
-    DRAW[sc["id"]](c, lt, D)
-    c.restore(); c.restore()
+    if not FX:
+        fade_out = 1 - prog(lt, D - 0.16, 0.16) if sc is not SCENES[-1] else 1.0
+        fade_in = prog(lt, 0, 0.12)
+        layer_alpha(c, min(fade_in, fade_out) if sc is not SCENES[0] else fade_out)
+        z = 1.0 + 0.035 * eio(prog(lt, 0, D))
+        c.save(); c.translate(CX, 780); c.scale(z, z); c.translate(-CX, -780)
+        DRAW[sc["id"]](c, lt, D)
+        c.restore(); c.restore()
+    else:
+        fx_background(c, t, sc["id"], lt)
+        TR = 0.2
+        po = prog(lt, D - TR, TR) if sc is not SCENES[-1] else 0.0
+        pi = (1 - prog(lt, 0, TR)) if sc is not SCENES[0] else 0.0
+        dx = -W * 0.42 * eio(po) + W * 0.42 * eio(pi)
+        blur = 46 * max(po, pi)
+        k = hit_k(t)
+        z = (1.0 + 0.04 * eio(prog(lt, 0, D))) * (1.0 + 0.075 * k)
+        sx = 16 * k * math.sin(t * 95.0); sy = 12 * k * math.cos(t * 81.0)
+        lay = skia.Paint()
+        if blur > 0.5: lay.setImageFilter(skia.ImageFilters.Blur(blur, 2.0))
+        lay.setAlphaf(1.0 - 0.35 * max(po, pi))
+        c.saveLayer(None, lay)
+        c.save(); c.translate(dx + sx, sy); c.translate(CX, 780); c.scale(z, z); c.translate(-CX, -780)
+        DRAW[sc["id"]](c, lt, D)
+        c.restore(); c.restore()
+        if k > 0.55:
+            fp = skia.Paint(Color=C((255, 245, 225), 0.33 * (k - 0.55) / 0.45)); fp.setBlendMode(skia.BlendMode.kScreen)
+            c.drawRect(skia.Rect(0, 0, W, H), fp)
+        if max(po, pi) > 0:
+            q = max(po, pi)
+            sp = skia.Paint(); sp.setBlendMode(skia.BlendMode.kScreen)
+            x0 = W * (1 - q) if po > 0 else W * q
+            sp.setShader(skia.GradientShader.MakeLinear([skia.Point(x0 - 260, 0), skia.Point(x0 + 260, 0)],
+                         [C(GOLD2, 0), C(GOLD2, 0.30 * math.sin(math.pi * q)), C(GOLD2, 0)], [0, 0.5, 1]))
+            c.drawRect(skia.Rect(0, 0, W, H), sp)
     brand(c, t, sc["id"])
     if not CLEAN: captions(c, t)
     overlays(c, fi)

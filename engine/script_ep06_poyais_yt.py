@@ -1,0 +1,7 @@
+# EP06 YouTube cut (~45 s, seamless loop back into the hook)
+SCENES = [('hook', ['Hundreds of people paid to move to a country that did not exist.', 'The maps, the money, even their land deeds were fake.']), ('claim', ['He said a native king had given him land in Central America.', 'About twelve thousand five hundred square miles. Bigger than Belgium.']), ('bonds', ['London investors bought his government bonds.', 'About two hundred thousand pounds.']), ('rehook', ['But the craziest part?', 'People actually moved there.']), ('sail', ['In 1822 and 1823, two ships sailed with about two hundred fifty settlers.']), ('arrival', ['They found no capital. No roads. No port.', 'Just jungle and swamp.']), ('disease', ['Fever spread through the camp.', 'More than one hundred eighty of them died.']), ('loopend', ['And MacGregor? Acquitted. He died a war hero.', 'All because'])]
+
+REHOOK = ('BUT THE', 'CRAZIEST PART?', 'PEOPLE ACTUALLY MOVED THERE.')
+LOOPEND = ('AND MACGREGOR?', 'ACQUITTED.', 'HE DIED A WAR HERO. ALL BECAUSE...')
+
+CAPTION_OVERRIDES = {'About twelve thousand five hundred square miles. Bigger than Belgium.': 'About 12,500 square miles. Bigger than Belgium.', 'About two hundred thousand pounds.': 'About £200,000.', 'In 1822 and 1823, two ships sailed with about two hundred fifty settlers.': 'In 1822 and 1823, two ships sailed with about 250 settlers.', 'More than one hundred eighty of them died.': 'More than 180 of them died.'}

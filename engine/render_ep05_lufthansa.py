@@ -1,6 +1,6 @@
 import os, sys, math, random
-os.environ["REC_ROOT"] = "/home/claude/ep05"
-sys.path.insert(0, "/home/claude/ep05")
+os.environ.setdefault("REC_ROOT", "/home/claude/ep05")
+sys.path.insert(0, os.environ["REC_ROOT"])
 import skia
 import engine as E
 from props import *

@@ -1,0 +1,6 @@
+vault_cleveland_small.mp4 | File:Cleveland - Vault Opening Procedure video.webm (Wikimedia Commons) | Public domain | vintage bank vault door opening (good segments: 18-30 s wheel, 36-54 s door/inside) | credit "ARCHIVE FOOTAGE · PUBLIC DOMAIN"
+ocean06_small.mp4 | File:Ocean surface waves 06.ogv (Wikimedia Commons) | CC0 | 6 s open sea | credit "FOOTAGE: WIKIMEDIA COMMONS · CC0"
+ocean09_small.mp4 | File:Ocean surface waves 09.ogv (Wikimedia Commons) | CC0 | 11 s open sea | credit "FOOTAGE: WIKIMEDIA COMMONS · CC0"
+Rejected: VOA "What happens with damaged U.S. dollars" (burned-in subtitles + logo).
+To add more: Mike's PC (Desktop Commander) can search Commons with "filetype:video <query>", keep only Public domain / CC0, download, and
+transcode with ffmpeg (on the PC: C:\Users\Bienvenu\scoop\shims\ffmpeg.exe) to *_small.mp4 (scale=-2:540, fps=24, crf 26), then stage.

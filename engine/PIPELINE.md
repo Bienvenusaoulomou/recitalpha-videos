@@ -46,6 +46,14 @@ Apply to EVERY new episode:
    Copy img/, fonts, models links into yt/. Name files Recitalpha_EPNN_<slug>.mp4 and Recitalpha_EPNN_<slug>_yt.mp4.
 4. YouTube post uses the _yt file; TikTok post uses the long file.
 
+## Motion design FX v2 (2026-10-25, engine.py) — "be the best in the niche"
+- engine.FX = True (default): whip-pan transitions with motion blur + gold light sweep between scenes, punch-zoom + shake + flash on
+  every impact (call E.set_hits(IMPACTS) in the render module), moving light leak, rising gold embers.
+- B-roll: E.BROLL[scene_id] = E.load_broll(path, start, dur, alpha=0.7-0.8, credit=...) plays real footage behind a scene,
+  sepia-graded with a dark gradient so text stays readable. Library: archive/broll/ (see credits.txt). Only Public domain / CC0 clips.
+  Memory: keep total b-roll under ~25 s per render (cgroup OOM kills renders above ~2 GB).
+- Reference wrappers: ep05/ep06 render_fx.py (engine/render_ep05_fx_wrapper.py, render_ep06_fx_wrapper.py) incl. YouTube loop-end scene.
+
 ## Hook rules (first 3 seconds decide everything)
 - Never open with "In 19XX, ..." or a name. Open with the absurd fact or a question, e.g. "This woman got banks to lend her millions... with one fake signature."
 - Frame 1 must already show the hook text big on screen (no fade-in from black).
