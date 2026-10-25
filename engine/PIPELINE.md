@@ -27,6 +27,7 @@ Rules from now on:
 2. Every scene must reveal something new: a number, a twist or a reversal. No "setup only" scenes.
 3. Put a re-hook at ~0:25-0:30 ("But that wasn't the crazy part...", "Then it got worse.") with a big on-screen line.
 4. Prefer escalating numbers like EP01 (counters, bars, before/after).
+5. Re-hook scene: add a scene with id "rehook" (2 short sentences) and use props.make_rehook(...). See script_ep05_lufthansa.py / script_ep06_poyais.py (v2 cuts).
 
 ## Hook rules (first 3 seconds decide everything)
 - Never open with "In 19XX, ..." or a name. Open with the absurd fact or a question, e.g. "This woman got banks to lend her millions... with one fake signature."

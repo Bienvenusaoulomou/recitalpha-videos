@@ -149,3 +149,14 @@ def calendar(c, x, y, s, a, label, sub=""):
     text(c, sub, 0, -105, BEBAS, 46, CREAM, a, spacing=4)
     text(c, label, 0, 90, ANTON, 150, INK, a)
     c.restore()
+
+def make_rehook(scene_id, line1, line2, line3, danger=False):
+    """Generic re-hook scene (put it at ~0:25-0:30). Usage: E.DRAW["rehook"] = make_rehook("rehook", "BUT THE", "CRAZIEST PART?", "PEOPLE ACTUALLY MOVED THERE.")"""
+    def sc(c, t, D):
+        b1 = beat(scene_id, 1) if len(E.SCN[scene_id]["sentences"]) > 1 else D * 0.5
+        pop_text(c, line1, CX, 640, BEBAS, 110, CREAM, prog(t, 0.0, 0.22), s0=1.4)
+        pop_text(c, line2, CX, 800, ANTON, 150, GOLD2, prog(t, 0.25, 0.25), glow=26, glow_rgb=GOLD)
+        pb = prog(t, b1 - 0.1, 0.25)
+        if pb > 0:
+            pop_text(c, line3, CX, 1000, ANTON, 84, RED if danger else CREAM, pb, glow=18, s0=1.5)
+    return sc
