@@ -29,6 +29,23 @@ Rules from now on:
 4. Prefer escalating numbers like EP01 (counters, bars, before/after).
 5. Re-hook scene: add a scene with id "rehook" (2 short sentences) and use props.make_rehook(...). See script_ep05_lufthansa.py / script_ep06_poyais.py (v2 cuts).
 
+## YouTube Studio advice (2026-10-25): "viewed vs swiped away" was only 41-45% (goal 70-80%)
+Apply to EVERY new episode:
+1. Frame 0 = the hook. Hook text and main visual at FULL opacity at t=0 (no fade-in), voice starts at once (gen_audio LEAD=0.08).
+   First spoken line = the most absurd true fact in under 2 seconds.
+2. Something new on screen every 2-3 seconds (new number, stamp, photo zoom, keyword pop). No static scene longer than 3 s.
+3. TWO CUTS PER EPISODE (same research, same scene functions):
+   - TikTok cut: 62-75 s (TikTok Creator Rewards needs > 60 s). Ends with next-episode teaser + Follow.
+   - YouTube Shorts cut: 35-50 s. Keep hook + the 4-5 strongest number/twist scenes + re-hook. No spoken "Follow".
+     End with a SEAMLESS LOOP: the last sentence must flow straight back into the first sentence
+     (e.g. last: "...and that is how" -> first: "Six masked men walked out of JFK with five million dollars.").
+     Put the next-episode teaser in the YouTube description instead.
+   How: epNN/ (TikTok) and epNN/yt/ (YouTube) each with its own script.py (yt SCENES = subset/shortened, same scene ids so wt() words exist),
+   own timeline.json/voice.wav. In render_epNN.py use os.environ.setdefault("REC_ROOT", "/home/claude/epNN") and
+   sys.path.insert(0, os.environ["REC_ROOT"]) so the same file renders both cuts: REC_ROOT=/home/claude/epNN/yt python3 render_epNN.py.
+   Copy img/, fonts, models links into yt/. Name files Recitalpha_EPNN_<slug>.mp4 and Recitalpha_EPNN_<slug>_yt.mp4.
+4. YouTube post uses the _yt file; TikTok post uses the long file.
+
 ## Hook rules (first 3 seconds decide everything)
 - Never open with "In 19XX, ..." or a name. Open with the absurd fact or a question, e.g. "This woman got banks to lend her millions... with one fake signature."
 - Frame 1 must already show the hook text big on screen (no fade-in from black).

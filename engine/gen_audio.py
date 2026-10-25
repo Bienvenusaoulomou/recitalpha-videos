@@ -10,7 +10,7 @@ SPEED = float(sys.argv[2]) if len(sys.argv) > 2 else 1.05
 SR = 24000
 k = Kokoro("/home/claude/rec/models/kokoro-v1.0.onnx", "/home/claude/rec/models/voices-v1.0.bin")
 
-LEAD, GAP_SENT, GAP_SCENE = 0.35, 0.22, 0.45
+LEAD, GAP_SENT, GAP_SCENE = 0.08, 0.22, 0.45  # voice starts at once (Shorts swipe test)
 chunks, timeline, t = [], [], LEAD
 chunks.append(np.zeros(int(LEAD * SR), dtype=np.float32))
 for si, (sid, sents) in enumerate(SCENES):
