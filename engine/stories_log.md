@@ -9,6 +9,11 @@
 | 02 | 2026-10-23 | Victor Lustig — sold the Eiffel Tower (1925), conned Al Capone, Alcatraz | "In 1925, a con man sold the Eiffel Tower." | Wikipedia (Victor Lustig); The Mob Museum; Today I Found Out. Photos: Wikimedia Commons PD (FBI 1931 card, Evening Public Ledger 1935, fake $10, death certificate, Hôtel de Crillon LOC, Alcatraz US Navy). Posted 23:00 |
 | 01 | 2026-10-23 | Charles Ponzi — the original Ponzi scheme (Boston, 1920) | "In 1920, one man promised to double your money in 90 days." | Smithsonian Postal Museum; Mass Moments; New England Historical Society; History Hit |
 
+## Re-cuts (2026-10-25, afternoon) — FX v2 + two cuts
+- EP05 Lufthansa: TikTok v3 74 s (Recitalpha_EP05_Lufthansa_Heist_v3.mp4, vault b-roll) · YouTube 42.6 s loop (…_yt.mp4). Re-hook at 0:28.
+- EP06 Poyais: TikTok v3 69 s (Recitalpha_EP06_Poyais_v3.mp4, ocean b-roll) · YouTube 42.8 s loop (…_yt.mp4). Re-hook at 0:30.
+- Compare their YouTube "viewed vs swiped" and % watched against EP01-04 (41-45% viewed; 35-45% watched, Ponzi 73.5%).
+
 ## Story choice rule (from 2026-10-24)
 Mike noticed many accounts retell the same famous stories (Eiffel Tower con, Ponzi, Capone) with no views. So:
 - PREFER little-known true stories that most viewers have never heard of. Skip the "top 20 most retold" stories
