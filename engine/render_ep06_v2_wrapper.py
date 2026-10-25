@@ -15,7 +15,9 @@ def sc_rehook(c, t, D):
     pop_text(c, l2, CX, 800, ANTON, 150, GOLD2, prog(t, 0.25, 0.25), glow=26, glow_rgb=GOLD)
     pb = prog(t, b1 - 0.1, 0.25)
     if pb > 0:
-        pop_text(c, l3, CX, 1000, ANTON, 84, RED if "DEADLY" in l3 else CREAM, pb, glow=18, s0=1.5)
+        sz = 84
+        while text_w(l3, F(ANTON, sz)) > 880 and sz > 40: sz -= 2
+        pop_text(c, l3, CX, 1000, ANTON, sz, RED if "DEADLY" in l3 else CREAM, pb, glow=18, s0=1.15)
 
 E.DRAW["rehook"] = sc_rehook
 ids = {s["id"] for s in E.SCENES}
