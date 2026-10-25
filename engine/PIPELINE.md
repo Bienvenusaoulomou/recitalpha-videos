@@ -17,6 +17,17 @@ Goal: reach Creator Rewards (10k followers, 100k views/30 days). Every video mus
 ## Story choice (first)
 - Prefer LITTLE-KNOWN true stories (see "Story choice rule" in stories_log.md). Famous stories are retold by hundreds of accounts.
 
+## Retention lessons (YouTube Studio, first 4 Shorts, 2026-10-25)
+- EP01 Ponzi (1:29): 73.5% average watched (1:05 avg). Best by far. Every scene revealed a new NUMBER that escalated
+  ($100 -> $200, 50% in 45 days, $10M, 160 million vs 27,000 coupons, -$20M). Simple visual payoff in the first 5 s ("PAID").
+- EP02 Eiffel (1:33): 35.6% (0:33). EP03 Capone (1:18): 44.7% (0:34). EP04 Brink's (1:32): 35.1% (0:32).
+  => Viewers leave at ~0:32-0:34, i.e. scenes 4-5, where those episodes slowed down with setup/background.
+Rules from now on:
+1. Target 65-80 s total (still over 62 s). Cut biography/background scenes; start the action by 0:10.
+2. Every scene must reveal something new: a number, a twist or a reversal. No "setup only" scenes.
+3. Put a re-hook at ~0:25-0:30 ("But that wasn't the crazy part...", "Then it got worse.") with a big on-screen line.
+4. Prefer escalating numbers like EP01 (counters, bars, before/after).
+
 ## Hook rules (first 3 seconds decide everything)
 - Never open with "In 19XX, ..." or a name. Open with the absurd fact or a question, e.g. "This woman got banks to lend her millions... with one fake signature."
 - Frame 1 must already show the hook text big on screen (no fade-in from black).
