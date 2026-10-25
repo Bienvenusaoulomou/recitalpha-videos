@@ -52,6 +52,9 @@ Work dir layout (paths are hard-coded, keep them):
    `python3 mix_ep.py render_epNN`, then mux:
    `ffmpeg -i video_only.mp4 -i mix.wav -c:v copy -c:a aac -b:a 192k -ar 48000 -shortest -movflags +faststart <name>.mp4`.
    Keep under 95 MB.
+   Helpers (copy to /home/claude/tools/): `python3 preview.py /home/claude/epNN render_epNN.py` writes contact.jpg (frame 0 + 2 frames
+   per scene); `python3 dryrun.py render_epNN` (run inside the episode dir) draws every 3rd frame. Two episodes can render in parallel
+   in the background (~20 min on 2 cores). Note: `archive/stock/lufthansa/` is an off-topic 1976 Ford contact sheet; don't use it.
 
 ## Publishing (TikTok + YouTube Shorts, same video, 2 separate Metricool posts)
 - Push the MP4 to GitHub repo Bienvenusaoulomou/recitalpha-videos (attach with add_repo, access "push"; clone --depth 1; fetch before push), folder `videos/`.
