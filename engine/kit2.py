@@ -267,7 +267,7 @@ def matchbox(c, x, y, s, a, rot=0, label="SAFETY MATCHES"):
     c.drawRoundRect(skia.Rect(-220, -140, 220, 140), 10, 10, P(C((200, 60, 40), a)))
     c.drawRect(skia.Rect(-220, -140, 220, -110), P(C((60, 40, 30), a)))
     c.drawRect(skia.Rect(-220, 110, 220, 140), P(C((60, 40, 30), a)))
-    c.drawCircle(0, -10, 60, P(C(CREAM, a))); text(c, "★", 0, 15, ANTON, 70, (200, 60, 40), a)
+    c.drawCircle(0, -10, 60, P(C(CREAM, a))); text(c, "K", 0, 15, ANTON, 70, (200, 60, 40), a)
     text(c, label, 0, 90, BEBAS, 40, CREAM, a, spacing=4)
     c.restore()
 
