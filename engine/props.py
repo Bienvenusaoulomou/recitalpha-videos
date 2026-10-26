@@ -155,7 +155,9 @@ def make_rehook(scene_id, line1, line2, line3, danger=False):
     def sc(c, t, D):
         b1 = beat(scene_id, 1) if len(E.SCN[scene_id]["sentences"]) > 1 else D * 0.5
         pop_text(c, line1, CX, 640, BEBAS, 110, CREAM, prog(t, 0.0, 0.22), s0=1.4)
-        pop_text(c, line2, CX, 800, ANTON, 150, GOLD2, prog(t, 0.25, 0.25), glow=26, glow_rgb=GOLD)
+        s2 = 150
+        while text_w(line2, F(ANTON, s2)) > 960 and s2 > 60: s2 -= 4
+        pop_text(c, line2, CX, 800, ANTON, s2, GOLD2, prog(t, 0.25, 0.25), glow=26, glow_rgb=GOLD)
         pb = prog(t, b1 - 0.1, 0.25)
         if pb > 0:
             sz = 84
