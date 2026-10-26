@@ -111,3 +111,15 @@ Work dir layout (paths are hard-coded, keep them):
 
 ## Report
 End each run with a short message: the 2 titles, post times, Metricool planner links (TikTok + YouTube), and any fact that was softened.
+
+## Batch tools (added 2026-10-26, used for EP09-EP20)
+- engine/newep.sh epNN (dirs + links), audio.sh epNN (both cuts, YT tail trimmed to 0.35 s), trimyt.sh epNN (YT audio only),
+  chain.sh epNN render_epNN (dry-run + render + mix both cuts), queue.sh (max 3 chains at once), mux.sh / finish.sh epNN Slug
+  (mux, sample strip in /tmp/claude-0/fin_epNN/strip.jpg, push, URL check). Copy them to /home/claude/tools/.
+- engine/kit2.py: sandwich, spray can, sensor, trash bag, forest, DNA, deposit boxes, radar, road sign, falling diamonds, map pin,
+  banknote, oil tank (x-ray water/oil), printing press, radio tower, 1990s phone, plane, clock, matchbox, match, pistol (wood),
+  bridge, ticket/certificate. Import after kit: `from kit2 import *`.
+- props.make_rehook auto-fits line 2 (long lines no longer clip).
+- Careful: kit2.ticket(c, x, y, s, a, rot=...) (alpha is the 5th arg).
+- PD photos fetched for these stories are in archive/used/batch_oct26/<topic>/ (credits.txt in each).
+- Layout rule learned: keep top titles at y >= 370 and photo-card tops below ~430 so they don't collide with the RÉCITALPHA brand line.

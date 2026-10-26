@@ -1,0 +1,3 @@
+﻿bridge_01.jpg | File:Brooklyn Museum - Bridge Brooklyn NY - George Bradford Brainerd.jpg | Public domain | between 1870 and 1889date QS:P571,+1850-00-00T00:00:00Z/7,P1319,+1870-00-00T00:00:00Z/9,P1326,+1889-00-00T00:00:00Z/9 | George Bradford Brainerd
+bridge_02.jpg | File:Brooklyn Museum - Bird's-Eye View of the Great New York and Brooklyn Bridge and Grand Display of Fire Works on Opening Night.jpg | Public domain | circa 1883date QS:P571,+1883-00-00T00:00:00Z/9,P1480,Q5727902 | Unknown authorUnknown author
+parker_01.webp | File:George C Parker.webp | Public domain | before 1900date QS:P,+1900-00-00T00:00:00Z/7,P1326,+1900-00-00T00:00:00Z/9 | Unknown authorUnknown author
