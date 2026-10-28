@@ -69,3 +69,9 @@ New: Mike's PC (Desktop Commander) can fetch Wikimedia Commons PD photos with C:
 - Metricool TikTok (last 7 days): the 4 TikTok posts of Oct 23–24 still show 0 views / no watch-time data via the API (Oct 25 TikTok posts not listed yet) -> likely API lag, check in the TikTok app.
 - Metricool YouTube: 6 Shorts listed (EP02–EP06), views/watch time still empty (24–48 h lag).
 - EP07/EP08: fully animated with a shared engine/kit.py (buildings, ID cards, warship, prison bars, newspaper, book, signature, diamond). YouTube loop cuts: tail silence trimmed to 0.35 s so the loop is seamless.
+
+## Run 2026-10-28 (daily task)
+- Oct 28 and Oct 29 (16:00 + 23:00, TikTok + YouTube) already filled by the Oct 26 batch -> no new episode made, stopped as per the rule.
+- Metricool TikTok API (Oct 21-28): 9 TikTok posts listed (Oct 23 -> Oct 27), ALL still show 0 views and no watch-time data.
+  Five days of zero is no longer plausible API lag -> Mike should check the TikTok app (views, any restriction/"under review" status).
+- Metricool YouTube: 8 Shorts listed (EP01-EP08), views/watch time still empty.
