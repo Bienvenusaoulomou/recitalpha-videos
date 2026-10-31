@@ -2,6 +2,7 @@
 
 | # | Date | Story | Hook | Sources |
 |---|------|-------|------|---------|
+| 21 | 2026-11-28 | The Great Stock Exchange Fraud of 1814 ("Napoleon is dead") | "A man in an officer's uniform announced that Napoleon was dead. The London stock market went wild. Napoleon was alive." | Wikipedia; ianvisits (200th anniversary); Historic Mysteries; MoneyWeek. Photos PD: David's Napoleon 1812, Lord Cochrane by James Ramsay c.1830, Stock Exchange 1810 (Rowlandson & Pugin). Softened: 'around £1 million' bought (sources £650k-£1.1M); profit figure dropped (sources disagree). Planned Nov 28 23:00. Generic teaser (December story not chosen yet) |
 | 20 | 2026-11-01 | The 1922 Denver Mint robbery | "Robbers hit the U.S. Mint in broad daylight. $200,000 in about 90 seconds." | Wikipedia (Denver Mint robbery); APMEX learning guide. Photos PD: Denver Mint 1906 (Detroit Publishing), 1924 Buick tourer (State Library QLD, generic illustration). No violence detail: guard Charles Linton named respectfully. Softened: "about 90 seconds" (1.5 min). Planned 23:00 (batch of Oct 26). Teases the 1814 Stock Exchange fraud |
 | 19 | 2026-11-01 | George C. Parker sold the Brooklyn Bridge | "This man sold the Brooklyn Bridge. Reportedly, twice a week." | Wikipedia (George C. Parker); Mental Floss; Untapped Cities. Photos PD: Currier & Ives 1883, W.H. Jackson c.1900 (LOC), G.B. Brainerd, Parker portrait (Commons PD). Softened: 'reportedly twice a week'; 'a relative of General Grant' (sources say son/grandson). Dropped: prices, 'guards loved his stories'. Planned 16:00 |
 | 18 | 2026-10-31 | John Dillinger's wooden-gun escape (Crown Point, 1934) | "A bank robber broke out of jail with a gun made of wood. Then drove away in the sheriff's own car." | Mob Museum; The Clio; TIME. Photos PD: FBI portrait/posters, Crown Point jail (Nyttend, PD). 'More than two dozen' locked up (Clio). Avoided 'Public Enemy No. 1' (title came later). Woodworker claim = 'reportedly'. Planned 23:00 |
@@ -38,6 +39,16 @@ Mike noticed many accounts retell the same famous stories (Eiffel Tower con, Pon
 ## Hook note (2026-10-25)
 EP01–EP04 all opened with "In 19XX". From EP05 on: open on the absurd fact + number, hook text big at frame 1, no year/name first.
 
+## METRICOOL FREE PLAN LIMIT (from 2026-10-31) — READ FIRST
+- Free plan = 20 PUBLISHED posts per calendar month; a post sent to TikTok + YouTube counts 2. Resets on the 1st.
+  October's quota ran out on Oct 28: EP12-EP16 failed ("You have reached your Metricool account limit") and EP17-EP18 were moved.
+- Mike's decision (Oct 31): publish EXACTLY 20 posts per month = 10 episodes (TikTok + YouTube), one every 3 days at 23:00 Tunis.
+- November plan (all scheduled): Nov 1 EP12 Salad Oil · Nov 4 EP13 Urschel/Kelly · Nov 7 EP14 Drake estate · Nov 10 EP15 Kreuger ·
+  Nov 13 EP16 Sarah Howe · Nov 16 EP17 Escobar · Nov 19 EP18 Dillinger · Nov 22 EP19 Brooklyn Bridge · Nov 25 EP20 Denver Mint ·
+  Nov 28 EP21 Napoleon 1814. => November is FULL (20/20). Do not schedule anything else in November.
+- The daily scheduled task no longer exists. For December: prepare 10 episodes, schedule one every 3 days (Dec 1, 4, ... 28), 23:00.
+- Before scheduling, count posts already published + scheduled in the month (getScheduledPosts) and never exceed 20.
+
 ## Batch of 2026-10-26 (Mike asked to prepare Tue Oct 27 -> Sun Nov 1 in advance)
 EP09-EP20 were made and scheduled in Metricool on Oct 26 (2 per day, 16:00 + 23:00, TikTok + YouTube). The daily task should find
 those slots filled and stop until Sunday; Monday Nov 2 is the next empty day.
@@ -45,7 +56,7 @@ New: Mike's PC (Desktop Commander) can fetch Wikimedia Commons PD photos with C:
 (search/get; credits.txt auto-written) when it's online. New shared props: engine/kit2.py. make_rehook now auto-fits line 2.
 
 ## Queue (verify every fact before using)
-- NEXT (teased at the end of EP20, for Monday Nov 2 16:00): the Great Stock Exchange Fraud of 1814 — a fake officer announced Napoleon was dead,
+- (DONE as EP21, Nov 28) the Great Stock Exchange Fraud of 1814 — a fake officer announced Napoleon was dead,
   the London stock market jumped, the plotters sold; Lord Cochrane convicted (later pardoned). Sources: Wikipedia, The History Press.
 - (done in the Oct 26 batch: Antwerp, Diamond Hoax 1872, Alves dos Reis, Salad Oil, Urschel/Kelly, Hartzell/Drake, Kreuger, Sarah Howe,
   Escobar by phone, Dillinger wooden gun, George C. Parker, Denver Mint 1922)

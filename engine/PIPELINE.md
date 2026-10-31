@@ -3,6 +3,10 @@
 Channel: TikTok @recitalpha6 — faceless animated TRUE stories about money, power, scams, gangs & mafia. US audience.
 Goal: reach Creator Rewards (10k followers, 100k views/30 days). Every video must be > 60 s (target 75–95 s).
 
+## Output limit (Metricool free plan, from 2026-10-31)
+- Only 20 published posts per month (TikTok + YouTube = 2 posts). Mike chose: exactly 10 episodes per month, one every 3 days, 23:00 Tunis.
+  See "METRICOOL FREE PLAN LIMIT" in stories_log.md. The "2 per day" rule below is suspended while on the free plan.
+
 ## Daily output
 - 2 new episodes per day. Post times (Africa/Tunis): 16:00 and 23:00.
 - Never repeat a story: check `engine/stories_log.md`, append each new episode there.
