@@ -127,3 +127,17 @@ End each run with a short message: the 2 titles, post times, Metricool planner l
 - Careful: kit2.ticket(c, x, y, s, a, rot=...) (alpha is the 5th arg).
 - PD photos fetched for these stories are in archive/used/batch_oct26/<topic>/ (credits.txt in each).
 - Layout rule learned: keep top titles at y >= 370 and photo-card tops below ~430 so they don't collide with the RÉCITALPHA brand line.
+
+
+## YouTube-only pipeline (from 2026-11-04)
+Metricool now publishes only YouTube Shorts (20/month). Per episode, one folder /home/claude/epNN with a single script.py
+(SCENES ending with a short "loopend" line that flows back into the hook) and render_epNN.py.
+1. tools/newyt.sh epNN <topic>   (engine files + photos staged from archive/new/<topic>)
+2. write script.py, then tools/audio1.sh epNN   (voice, tail trimmed to 0.35 s for the loop)
+3. write render_epNN.py (header template tools/tpl/head.py; props from props/kit/kit2/kit3), preview with tools/preview.py
+4. tools/queue1.sh epNN ...  (2 renders at a time: the container has 2 CPUs)
+5. tools/finish1.sh epNN EPNN_Slug  -> videos/Recitalpha_EPNN_Slug_yt.mp4, strip at /tmp/claude-0/fin_epNN/strip.jpg, push, URL check
+6. Metricool createScheduledPost: providers=[youtube] only, 23:00 Africa/Tunis.
+New props in engine/kit3.py: globe, route, mountains, frame (painting placeholder, never pass a fake off as a real artwork),
+check, dog, stone_giant, casino_sign, wires, code_panel, lightbulb_eye, desk_phone (1970s rotary; kit2.phone is a 1990s brick phone).
+Frame 0 must already show the hook visual (no blank first frame, no "$0" counter).

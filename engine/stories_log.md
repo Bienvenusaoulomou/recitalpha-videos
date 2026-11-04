@@ -2,6 +2,15 @@
 
 | # | Date | Story | Hook | Sources |
 |---|------|-------|------|---------|
+| 30 | 2026-11-30 | Dutch Schultz's lost safe (1935) | "A gangster's safe full of money is hidden somewhere in the mountains of New York. Nobody has ever found it." | Legends of America; Biography.com. Photos PD: NYPD booking photo, 1934 wanted poster. Framed as LEGEND ("the legend says"); ~$7M = estimate; Phoenicia/Catskills per legend; death stated without detail. YouTube only |
+| 29 | 2026-11-27 | The Cardiff Giant and P.T. Barnum (1869) | "In 1869, workers in New York dug up a giant stone man. Crowds paid to see it. It was a fake." | Legends of America; Everything Everywhere. Photos PD: 1869 excavation, Bain/LOC, Barnum by Brady c.1860. Barnum offer $50,000 (both); 'sucker' line = Hannum, 'is quoted saying'; Feb 1870 ruling. Dropped admission price (sources differ) and height. YouTube only |
+| 28 | 2026-11-24 | Leona Helmsley: "only the little people pay taxes" + $12M dog | "A billionaire left twelve million dollars to her dog." | The Week; 6abc/AP 2008; Deseret News obit 2007. Photo PD: USMS 1988. $12M -> $2M, $10M to foundation; 1989 conviction ~$1.2M; quote = housekeeper testimony, she denied it. Dropped time served (18 vs 21 months) and dog budget (1 source). YouTube only |
+| 27 | 2026-11-21 | Willie Sutton never said "that's where the money is" | "The most famous bank robber in America never said his most famous line." | Quote Investigator; Snopes; Britannica; NY Fed Liberty Street Economics (1970 bank ad). Photos PD: LOC/Gotfryd 1972, portrait. ~$2M by his own estimate; disguises; escapes; 1976 memoir 'Where the Money Was'. YouTube only |
+| 26 | 2026-11-18 | Stanley Rifkin's $10.2M phone-call bank theft (1978) | "A man robbed a bank of ten million dollars without a gun. All he needed was a phone call." | Wikipedia (Stanley Mark Rifkin); TIME 'The Ultimate Heist' (1978). No photo (fully animated, 1970s desk phone prop). 43,200 carats for $8.1M; arrested Nov 5 1978; 'someone he trusted tipped off the FBI' (lawyer vs associate in sources). YouTube only |
+| 25 | 2026-11-15 | Bugsy Siegel and the Flamingo money pit (1946-47) | "The mob gave Bugsy Siegel money to build a casino in the desert. The bill passed six million dollars." | Wikipedia (Bugsy Siegel); PBS American Experience. Photo PD: NYPD 1928 mugshot. Opened Dec 26 1946 unfinished; shut within weeks; partners suspected skimming; died June 20 1947 (no detail). Original budget not stated (not in sources). YouTube only |
+| 24 | 2026-11-12 | Han van Meegeren, the forger who had to prove his Vermeer was fake | "A forger had to prove his own painting was fake, to save his life." | Britannica; History Hit; History Collection. Photos CC0: Anefo 1945; real Vermeer (PD) shown only as 'REAL VERMEER'. Fakes shown as stylised placeholder portraits. 'Ended up in Göring's collection', 'paid largely in other paintings'; 'death penalty' = could mean death. Death 'end of 1947' (sources differ on timing). YouTube only |
+| 23 | 2026-11-09 | Clifford Irving's fake Howard Hughes autobiography (1971-72) | "A writer sold the autobiography of Howard Hughes for $765,000. Hughes had never met him." | Wikipedia (Clifford Irving); VOA 2017 obit. Photos PD: Hughes 1938 (Acme; Harris & Ewing/LOC). Phone conference Jan 7 1972; 'Helga R. Hughes' Swiss account; 17 months served. YouTube only |
+| 22 | 2026-11-06 | Mark Twain and the Paige Compositor | "Mark Twain lost almost everything to one machine." | Wikipedia (Paige Compositor; Mark Twain); Amusing Planet. Photos PD: A.F. Bradley 1907 (LOC), Scientific American 1901. ~$300,000; bankrupt 1894; world lecture tour 1895; repaid creditors in full. Dropped '18,000 parts' (1 source). YouTube only |
 | 21 | 2026-11-28 | The Great Stock Exchange Fraud of 1814 ("Napoleon is dead") | "A man in an officer's uniform announced that Napoleon was dead. The London stock market went wild. Napoleon was alive." | Wikipedia; ianvisits (200th anniversary); Historic Mysteries; MoneyWeek. Photos PD: David's Napoleon 1812, Lord Cochrane by James Ramsay c.1830, Stock Exchange 1810 (Rowlandson & Pugin). Softened: 'around £1 million' bought (sources £650k-£1.1M); profit figure dropped (sources disagree). Planned Nov 28 23:00. Generic teaser (December story not chosen yet) |
 | 20 | 2026-11-01 | The 1922 Denver Mint robbery | "Robbers hit the U.S. Mint in broad daylight. $200,000 in about 90 seconds." | Wikipedia (Denver Mint robbery); APMEX learning guide. Photos PD: Denver Mint 1906 (Detroit Publishing), 1924 Buick tourer (State Library QLD, generic illustration). No violence detail: guard Charles Linton named respectfully. Softened: "about 90 seconds" (1.5 min). Planned 23:00 (batch of Oct 26). Teases the 1814 Stock Exchange fraud |
 | 19 | 2026-11-01 | George C. Parker sold the Brooklyn Bridge | "This man sold the Brooklyn Bridge. Reportedly, twice a week." | Wikipedia (George C. Parker); Mental Floss; Untapped Cities. Photos PD: Currier & Ives 1883, W.H. Jackson c.1900 (LOC), G.B. Brainerd, Parker portrait (Commons PD). Softened: 'reportedly twice a week'; 'a relative of General Grant' (sources say son/grandson). Dropped: prices, 'guards loved his stories'. Planned 16:00 |
@@ -39,7 +48,20 @@ Mike noticed many accounts retell the same famous stories (Eiffel Tower con, Pon
 ## Hook note (2026-10-25)
 EP01–EP04 all opened with "In 19XX". From EP05 on: open on the absurd fact + number, hook text big at frame 1, no year/name first.
 
-## METRICOOL FREE PLAN LIMIT (from 2026-10-31) — READ FIRST
+## YOUTUBE ONLY ON METRICOOL (from 2026-11-04) — READ FIRST
+- Analytics (Nov 4): YouTube views come on the days a Short is published (Oct 25: 323, Nov 1: 316) and drop near 0 on days
+  without one (Oct 29-31: 16 total). TikTok: all 12 videos stuck at 69-92 views, ~0 likes -> not content-related.
+- Mike's decision (Nov 4): Metricool publishes ONLY to YouTube (20 Shorts/month). Mike posts TikTok himself, and is changing
+  his TikTok niche. => Do NOT schedule TikTok posts anymore. Only the YouTube loop cut is needed (tools/newyt.sh, audio1.sh,
+  chain1.sh, queue1.sh, finish1.sh in engine/ytonly_tools/).
+- November: EP12 (Nov 1, TikTok+YT = 2 posts) + 18 YouTube Shorts = 20. The 9 November TikTok posts (EP13-EP21) were set to DRAFT.
+  YT schedule 23:00 Tunis: Nov 4 EP13 · 6 EP22 Twain · 7 EP14 · 9 EP23 Irving/Hughes · 10 EP15 · 12 EP24 Van Meegeren · 13 EP16 ·
+  15 EP25 Siegel · 16 EP17 · 18 EP26 Rifkin · 19 EP18 · 21 EP27 Sutton · 22 EP19 · 24 EP28 Helmsley · 25 EP20 · 27 EP29 Cardiff ·
+  28 EP21 · 30 EP30 Schultz.
+- "Next episode:" lines were removed from YouTube descriptions (order changed). YouTube titles lead with a FAMOUS NAME + surprising angle.
+- December onward: 20 YouTube Shorts per month (about one every 1.5 days, 23:00 Tunis). Never exceed 20 published posts/month.
+
+## METRICOOL FREE PLAN LIMIT (from 2026-10-31) — superseded by the section above
 - Free plan = 20 PUBLISHED posts per calendar month; a post sent to TikTok + YouTube counts 2. Resets on the 1st.
   October's quota ran out on Oct 28: EP12-EP16 failed ("You have reached your Metricool account limit") and EP17-EP18 were moved.
 - Mike's decision (Oct 31): publish EXACTLY 20 posts per month = 10 episodes (TikTok + YouTube), one every 3 days at 23:00 Tunis.
