@@ -10,7 +10,7 @@ from PIL import Image
 S=Image.new('RGB',(216*9,384))
 for i in range(9): S.paste(Image.open('$D/g_%d.png'%i).convert('RGB'),(i*216,0))
 S.save('$D/strip.jpg')"
-cd /home/claude/recitalpha-videos && git add videos/Recitalpha_${N}_yt.mp4 && git commit -qm "$1 $N (YouTube loop cut)
+cd /home/claude/recitalpha-videos && git add -A engine videos/Recitalpha_${N}_yt.mp4 && git commit -qm "$1 $N (YouTube loop cut)
 
 Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>
 Claude-Session: https://claude.ai/code/session_016oEeKTCBmNaew3HRkY6ocV" && git pull -q --rebase && git push -q 2>&1 | grep -vi warning | tail -2
