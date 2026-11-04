@@ -67,8 +67,9 @@ def frame(c, x, y, w, h, a, img=None, rot=0, label=None, fake=0.0):
         sh_ = skia.Path(); sh_.moveTo(-w * 0.42, h / 2); sh_.cubicTo(-w * 0.4, h * 0.12, w * 0.4, h * 0.12, w * 0.42, h / 2); sh_.close()
         c.drawPath(sh_, P(C((60, 70, 96), a)))
         c.drawOval(skia.Rect(-w * 0.17, -h * 0.2, w * 0.17, h * 0.14), P(C((214, 180, 140), a * 0.95)))
-        c.drawOval(skia.Rect(-w * 0.22, -h * 0.3, w * 0.2, -h * 0.06), P(C((44, 74, 120), a)))
-        c.drawCircle(w * 0.1, h * 0.02, w * 0.018, P(C((240, 236, 220), a)))
+        c.drawOval(skia.Rect(-w * 0.2, -h * 0.33, w * 0.19, -h * 0.15), P(C((70, 56, 40), a)))
+        for ex in (-0.06, 0.07): c.drawCircle(w * ex, -h * 0.05, w * 0.016, P(C((40, 30, 22), a)))
+        c.drawCircle(w * 0.15, h * 0.06, w * 0.014, P(C((240, 236, 220), a)))
         for i in range(14):
             y_ = -h / 2 + i * h / 13; c.drawLine(-w / 2, y_, w / 2, y_ + 8, P(C((0, 0, 0), a * 0.12), stroke=1.5))
         c.restore()
