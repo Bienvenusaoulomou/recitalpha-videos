@@ -141,3 +141,20 @@ Metricool now publishes only YouTube Shorts (20/month). Per episode, one folder 
 New props in engine/kit3.py: globe, route, mountains, frame (painting placeholder, never pass a fake off as a real artwork),
 check, dog, stone_giant, casino_sign, wires, code_panel, lightbulb_eye, desk_phone (1970s rotary; kit2.phone is a 1990s brick phone).
 Frame 0 must already show the hook visual (no blank first frame, no "$0" counter).
+
+
+## NEW FORMAT from December 2026 (Mike, Nov 5) — READ FIRST for new episodes
+- English, YouTube Shorts only, 60-90 s (pilot EP31 = 67 s). No loopend needed; end with a question for the comments + follow pill.
+- 2D characters (engine/chars.py, import as `import chars as CH`): CH.HACKER (hood, glowing eyes), CH.RECRUITER and CH.EMPLOYEE
+  (office), CH.CONMAN (1920s suit), CH.LADY (1920s). draw(c, x, feet_y, scale, face=±1, mouth, blink, wink, brow, tilt, look,
+  arm_f=(shoulder°, elbow°), arm_b, walk=phase, hat_lift). Scale ~0.9-1.05 with feet at y 1220-1250. Add new kinds in chars.py if needed.
+- Template: engine/render_ep31_yt.py + engine/script_ep31_yt.py (props laptop, missile, pie, keyicon, crypto_coin, coin_rain inside).
+- Topics: geopolitics in the news, AI, cybersecurity, the coming digital war, Europe-Africa relations, African vs Western leaders —
+  ALWAYS through MONEY: budgets, ransoms, embezzlement, stolen funds, debts, deals.
+- Rules: search fresh news first; every fact >= 2 sources; numbers rounded/softened when sources differ; real people may appear only
+  as stylised figures and may only "say" verified quotes (with source) — never invented lines; no generalisations about a people,
+  race or continent: use data (Afrobarometer, Eurobarometer, Pew, UNCTAD, court rulings) and present different views as views.
+  No gore. Mostly animated (no photo fetching needed); PD/CC0 only if a photo is used.
+- Metricool: YouTube only, max 20 posts/month. December slots at 23:00 Africa/Tunis: Dec 1 (EP31 pilot), 3, 4, 6, 7, 9, 10, 12, 13,
+  15, 16, 18, 19, 21, 22, 24, 25, 27, 28, 30.
+- Container note: background processes can be killed if the container restarts; check chain.status and re-run if missing.

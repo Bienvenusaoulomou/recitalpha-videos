@@ -2,6 +2,7 @@
 
 | # | Date | Story | Hook | Sources |
 |---|------|-------|------|---------|
+| 31 | 2026-12-01 | PILOT new format: North Korea's crypto heists fund its nuclear program | "In February 2025, hackers stole $1.5 billion from a crypto exchange. In one single attack." | Chainalysis via The Register + Dawn (2025: ~$2B, ~60% of global, $6.75B cumulative, Bybit $1.5B, fake recruiters/IT workers); AFP via Malay Mail + Hurriyet (KelpDAO ~$300M Apr 18 2026, preliminary Lazarus attribution, UN panel: funds nuclear program). 2D characters (hacker/recruiter/employee), 67 s, English, YouTube only |
 | 30 | 2026-11-30 | Dutch Schultz's lost safe (1935) | "A gangster's safe full of money is hidden somewhere in the mountains of New York. Nobody has ever found it." | Legends of America; Biography.com. Photos PD: NYPD booking photo, 1934 wanted poster. Framed as LEGEND ("the legend says"); ~$7M = estimate; Phoenicia/Catskills per legend; death stated without detail. YouTube only |
 | 29 | 2026-11-27 | The Cardiff Giant and P.T. Barnum (1869) | "In 1869, workers in New York dug up a giant stone man. Crowds paid to see it. It was a fake." | Legends of America; Everything Everywhere. Photos PD: 1869 excavation, Bain/LOC, Barnum by Brady c.1860. Barnum offer $50,000 (both); 'sucker' line = Hannum, 'is quoted saying'; Feb 1870 ruling. Dropped admission price (sources differ) and height. YouTube only |
 | 28 | 2026-11-24 | Leona Helmsley: "only the little people pay taxes" + $12M dog | "A billionaire left twelve million dollars to her dog." | The Week; 6abc/AP 2008; Deseret News obit 2007. Photo PD: USMS 1988. $12M -> $2M, $10M to foundation; 1989 conviction ~$1.2M; quote = housekeeper testimony, she denied it. Dropped time served (18 vs 21 months) and dog budget (1 source). YouTube only |
@@ -47,6 +48,12 @@ Mike noticed many accounts retell the same famous stories (Eiffel Tower con, Pon
 
 ## Hook note (2026-10-25)
 EP01–EP04 all opened with "In 19XX". From EP05 on: open on the absurd fact + number, hook text big at frame 1, no year/name first.
+
+## DECEMBER 2026 = NEW FORMAT (see PIPELINE.md "NEW FORMAT") — candidate topics, verify everything again
+Kenya State House site hacked + 5 BTC ransom (Jul 2026) · Africa's ~$88.6B/yr illicit financial flows (UNCTAD) and where it goes ·
+Teodorin Obiang "biens mal acquis" assets seized in France · Bangladesh Bank $81M SWIFT heist (2016) · Arup $25M deepfake video-call fraud ·
+African Union HQ built by China and the reported nightly data transfers (Le Monde 2018) · Africa <1% of world data-centre capacity / AI ·
+EU-Tunisia migration deal money · African debt: interest vs health spending · Pegasus spyware prices · + fresh news of the week.
 
 ## YOUTUBE ONLY ON METRICOOL (from 2026-11-04) — READ FIRST
 - Analytics (Nov 4): YouTube views come on the days a Short is published (Oct 25: 323, Nov 1: 316) and drop near 0 on days
