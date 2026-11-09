@@ -172,3 +172,13 @@ RECRUITER = Char("office", dict(skin=(214, 172, 136), body=(70, 74, 82), sleeve=
                                 hat=(0, 0, 0), hair=(40, 30, 24), accent=(40, 90, 160), accent2=(0, 0, 0)))
 EMPLOYEE = Char("office", dict(skin=(236, 196, 160), body=(150, 160, 176), sleeve=(150, 160, 176), legs=(60, 66, 80), shoe=(40, 30, 24),
                                hat=(0, 0, 0), hair=(150, 100, 50), accent=(196, 54, 44), accent2=(0, 0, 0)))
+
+# Dec 2026 additions (EP32-EP34)
+OFFICIAL = Char("office", dict(skin=(128, 86, 60), body=(30, 30, 38), sleeve=(28, 28, 36), legs=(24, 24, 30), shoe=(16, 14, 12),
+                               hat=(0, 0, 0), hair=(22, 18, 16), accent=(214, 168, 75), accent2=(0, 0, 0)))
+CFO = Char("office", dict(skin=(226, 184, 150), body=(40, 48, 70), sleeve=(38, 46, 66), legs=(34, 40, 56), shoe=(24, 20, 18),
+                          hat=(0, 0, 0), hair=(120, 120, 124), accent=(150, 40, 50), accent2=(0, 0, 0)))
+COLLEAGUE = Char("office", dict(skin=(190, 146, 110), body=(96, 70, 60), sleeve=(92, 66, 56), legs=(54, 50, 50), shoe=(30, 24, 20),
+                                hat=(0, 0, 0), hair=(30, 22, 18), accent=(40, 120, 90), accent2=(0, 0, 0)))
+CLERK = Char("office", dict(skin=(232, 200, 166), body=(200, 206, 214), sleeve=(200, 206, 214), legs=(50, 56, 70), shoe=(30, 24, 20),
+                            hat=(0, 0, 0), hair=(26, 22, 20), accent=(40, 70, 140), accent2=(0, 0, 0)))
