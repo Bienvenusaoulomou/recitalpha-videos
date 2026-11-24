@@ -160,4 +160,4 @@ Frame 0 must already show the hook visual (no blank first frame, no "$0" counter
 - Container note: background processes can be killed if the container restarts; check chain.status and re-run if missing.
 - Size note (Nov 23 run): EP47-49 renders came out ~150 MB (GitHub rejects >100 MB). Before finish1.sh, if video_only.mp4 > 90 MB:
   `ffmpeg -i video_only.mp4 -c:v libx264 -preset medium -crf 22 -maxrate 8M -bufsize 16M -pix_fmt yuv420p vo2.mp4 && mv vo2.mp4 video_only.mp4` (-> ~20 MB, looks fine).
-- December status after the Nov 23 run: 19/20 YouTube slots filled; only Dec 30 remains.
+- December status after the Nov 24 run: 20/20 YouTube slots filled (EP50 on Dec 30). December is complete.
